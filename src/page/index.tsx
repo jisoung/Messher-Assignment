@@ -66,8 +66,6 @@ const IndexPage: FC = () => {
             setSwapInputForm((prev) => ({...prev, resultInputValue: value}));
         }
     }
-
-    console.log(tokenCtx)
     
     return (
         <>
