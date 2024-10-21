@@ -1,0 +1,112 @@
+.IndexPage-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.IndexPage-swap_section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 400px;
+    background-color: rgb(35, 35, 35);
+    padding: 16px;
+    border-radius: 8px;
+
+    @media (max-width: 400px) {
+        width: 100%;
+    }
+}
+
+.IndexPage-swap_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.IndexPage-swap_head_title {}
+
+.IndexPage-swap_setting_icon {
+    cursor: pointer;
+}
+
+.IndexPage-swap_input_section {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(51, 51, 51);
+    padding: 12px;
+    border-radius: 8px;
+    
+}
+
+.IndexPage-swap_input_section_left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.IndexPage-swap_input_section_right {
+    
+}
+
+.IndexPage-swap_active_button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: rgb(65, 65, 65);
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 14px;
+}
+
+.IndexPage-swap_input {
+    color: white;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    
+    &::-webkit-outer-spin-button
+    &::-webkit-inner-spin-button {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+}
+.IndexPage-swap_input_USD {
+    font-size: 12px;
+    color: rgb(167, 167, 167);
+}
+.IndexPage-swap_down_arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(51, 51, 51);
+    border: 4px solid rgb(35, 35, 35);
+    border-radius: 12px;
+    position: absolute;
+    top: calc(50%);
+    left: calc(50%);
+    transform: translate(-50%, -80%);
+    padding: 2px;
+}
+
+.IndexPage-swap_button {
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    height: 50px;
+    font-size: 16px;
+
+    &--disabled {
+        background-color: rgb(51, 51, 51);
+        color: rgb(131, 131, 131);
+    }
+    &--active {
+        background-color: rgb(70, 138, 255);
+        color: white;
+    }
+}
